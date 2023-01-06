@@ -175,9 +175,9 @@ void Decode() {
 	void (*ExecuteOPCODE[32])() = {
 	ADDI,	NULL,	ORI,	NULL,	ANDI,	NULL,
 	MOVI,	NULL,	ADD,	SUB,	NOT,	NEG,
-	OR,		AND,	XOR,	ASR,	LSR,	SHL,
-	ROR,	BR,		BRL,	J,		JL,		LD,
-	LDR,	ST,		STR,	LEA,	MSN,	NULL,
+	OR,	AND,	XOR,	ASR,	LSR,	SHL,
+	ROR,	BR,	BRL,	J,	JL,	LD,
+	LDR,	ST,	STR,	LEA,	MSN,	NULL,
 	NULL,	NULL,
 	};
 	ExecuteOPCODE[OPCODE()]();
