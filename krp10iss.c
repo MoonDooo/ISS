@@ -213,11 +213,11 @@ int OPCODE() {return (IR >> 27);}
 void RARead	  (Operand* operand){	 operand->ra	= IR >> 22;}
 void RBRead	  (Operand* operand){	 operand->rb	= IR >> 17;}
 void RCRead	  (Operand* operand){	 operand->rc	= IR >> 12;}
-void IRead	  (Operand* operand){	 operand->I		= IR >> 5;}
-void ShamtRead(Operand* operand){	 operand->shamt = IR; }
-void CondRead (Operand* operand){	 operand->cond	= IR;}
-void Imm22Read(Operand* operand){	 operand->imm22	= IR;}
-void Imm17Read(Operand* operand){	 operand->imm17 = IR;}
+void IRead	  (Operand* operand){	 operand->I	= IR >> 5;}
+void ShamtRead	  (Operand* operand){	 operand->shamt = IR;}
+void CondRead 	  (Operand* operand){	 operand->cond	= IR;}
+void Imm22Read	  (Operand* operand){	 operand->imm22	= IR;}
+void Imm17Read	  (Operand* operand){	 operand->imm17 = IR;}
 
 /*
 * Execute 함수
